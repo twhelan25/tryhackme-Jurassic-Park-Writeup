@@ -43,10 +43,19 @@ Let's visit the other sections of the online shop:
 
 Notice the url, this alone indicates potential vulnerabilities for sql injection attacks:
 
-Parameter in URL: The presence of a parameter in the URL (id=5) suggests that the application is using this value to query a database. This is a common entry point for SQL injection attacks.
+Parameter in URL: The presence of a parameter in the URL (id=1) suggests that the application is using this value to query a database. This is a common entry point for SQL injection attacks.
 Numeric ID: The use of a numeric ID as a parameter is particularly susceptible to SQL injection if not properly sanitized. Attackers often start by manipulating numeric parameters.
 PHP file: The .php extension indicates a PHP script, which is commonly used for database-driven web applications. PHP applications, if not properly coded, can be vulnerable to SQL injection.
 Simple structure: The simplicity of the URL structure (just an ID parameter) might indicate a straightforward query to the database, which could be vulnerable if not using parameterized queries.
 
-Before we start testing for sql injection attacks let's finish enuerating directories and run a nikto scan on the target:
+Before we start testing for sql injection attacks let's finish enuerating directories and run a nikto scan on the target. I dug around the directories but didn't find too much that will help. There is a robots.txt dir which had a reference to the pickle rick CTF. Some some other dirs that contain some hints and others that are related to the sql database. 
+Let's try to mess with the numeric parameters that we saw for the url of the online shops.
+Each section is 1-3, so first I just changed the number until it brings us to 5, which uncovers valueable info. 
 
+![id=5](https://github.com/user-attachments/assets/e3540c14-649f-490a-94af-8ac72618fe33)
+
+I tried the blocked characters like ', and we get that funny message from Dennis, just like when we hijacked the system in the classic movie! At the end of the page, it says "Try sqlmap... I dare you!".
+
+![magicword!](https://github.com/user-attachments/assets/fb883878-cc48-4f0c-a501-b16b69c9a982)
+
+So, let's start running sqlmap against this url.
