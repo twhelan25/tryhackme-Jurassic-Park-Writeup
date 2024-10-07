@@ -37,13 +37,16 @@ Let's check out the webserver on tcp/80 first:
 
 ![onlineshop](https://github.com/user-attachments/assets/23cb17db-73db-4694-968a-5a87b7345b8a)
 
-If we visit the other sections of the online shop:
+Let's visit the other sections of the online shop:
 
 ![shop2](https://github.com/user-attachments/assets/b91d7fbc-661b-4f24-b124-808e849af504)
 
-Notice the way the url, this alone indicates potential vulnerabilities for sql injection attacks:
+Notice the url, this alone indicates potential vulnerabilities for sql injection attacks:
 
 Parameter in URL: The presence of a parameter in the URL (id=5) suggests that the application is using this value to query a database. This is a common entry point for SQL injection attacks.
 Numeric ID: The use of a numeric ID as a parameter is particularly susceptible to SQL injection if not properly sanitized. Attackers often start by manipulating numeric parameters.
 PHP file: The .php extension indicates a PHP script, which is commonly used for database-driven web applications. PHP applications, if not properly coded, can be vulnerable to SQL injection.
 Simple structure: The simplicity of the URL structure (just an ID parameter) might indicate a straightforward query to the database, which could be vulnerable if not using parameterized queries.
+
+Before we start testing for sql injection attacks let's finish enuerating directories and run a nikto scan on the target:
+
