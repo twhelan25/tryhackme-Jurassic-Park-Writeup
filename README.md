@@ -2,7 +2,9 @@
 
 # tryhackme-Jurassic-Park-Writeup
 
-This is a walkthrough for the tryhackme CTF Jurassic Park. I will not provide any flags or passwords as this is intended to be used as a guide.
+This is a walkthrough for the tryhackme CTF Jurassic Park. I will not provide any flags or passwords as this is intended to be used as a guide. Think you're up for the Challange?
+
+![Dennis](https://github.com/user-attachments/assets/92daa2f0-353a-490d-8ff2-2f2bf432d062)
 
 ## Scanning/Reconnaissance
 
@@ -28,3 +30,8 @@ Command break down:
 -oN nmap.txt: This option specifies normal output that should be saved to a file named “nmap.txt.
 
 This scan reveals a webserver on port 80 and ssh on tcp/22:
+
+![nmap](https://github.com/user-attachments/assets/1d1a853a-bce9-46c4-8fe9-06478e544fbe)
+
+Let's check out the webserver on tcp/80 first:
+
