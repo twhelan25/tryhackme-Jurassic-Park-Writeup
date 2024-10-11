@@ -58,7 +58,7 @@ I tried the blocked characters like ', and we get that funny message from Dennis
 
 ![magicword!](https://github.com/user-attachments/assets/fb883878-cc48-4f0c-a501-b16b69c9a982)
 
-So, let's start running sqlmap against this url.
+So, let's start running sqlmap against this url. It's a good idea to make sure your sqlmap is up to date.
 The first query that returned that answers to the fist two questions is:
 
 ![sql--dbs](https://github.com/user-attachments/assets/f7ed14dc-97e2-4a6f-ae91-b8ae2ead94f1)
