@@ -75,4 +75,15 @@ This uncovers the info needed for the questions about the columns and info to ma
 
 ![sqlpassword](https://github.com/user-attachments/assets/e3a63c89-2262-475b-94d8-537510ca0da3)
 
+Now that we have Dennis's password we can use it to ssh onto the target system and get the first flag, which is in Dennis's home directory.
+
+![flag1](https://github.com/user-attachments/assets/26ed4d3f-adf2-4a7c-822e-1545cc61d419)
+
+The next flag I found is at the very beginning of .bash_history, as well as bash command history that will help us.
+
+![flag3](https://github.com/user-attachments/assets/16ba42d5-d85b-4cfd-ac32-93a94554fe0b)
+
+Let's run sudo -l to see what Dennis has for privileges:
+
+
 
