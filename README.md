@@ -90,3 +90,9 @@ Let's run sudo -l to see what Dennis has for privileges:
 After using the last scp cmd in the .bash_history we have flag5 on our system.
 
 ![flag5](https://github.com/user-attachments/assets/bd507873-f821-4afd-bff7-5894201feb97)
+
+It took me a while longer to find flag2 but I ended up finding with this find cmd:
+
+![flag2](https://github.com/user-attachments/assets/c6b2862b-3175-459f-9739-d765f85ddc9d)
+
+I hope you enjoyed this CTF!
