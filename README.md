@@ -71,4 +71,8 @@ The result returns the data base. We can then use that to do further enumeration
 
 ![sqlmap columns](https://github.com/user-attachments/assets/15d014c8-ac90-4b73-ac12-d8020c3e6c62)
 
+This uncovers the info needed for the questions about the columns and info to make the next query to get Dennis's password.
+
+
+
 
