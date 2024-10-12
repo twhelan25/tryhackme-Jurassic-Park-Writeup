@@ -66,3 +66,9 @@ sudo apt upgrade sqlmap
 The first query that returned that answers to the fist two questions is:
 
 ![sql--dbs](https://github.com/user-attachments/assets/f7ed14dc-97e2-4a6f-ae91-b8ae2ead94f1)
+
+The result returns the data base. We can then use that to do further enumeration and find of the columns, with this cmd:
+
+![sqlmap columns](https://github.com/user-attachments/assets/15d014c8-ac90-4b73-ac12-d8020c3e6c62)
+
+
