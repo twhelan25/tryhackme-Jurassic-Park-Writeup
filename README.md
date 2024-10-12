@@ -85,5 +85,8 @@ The next flag I found is at the very beginning of .bash_history, as well as bash
 
 Let's run sudo -l to see what Dennis has for privileges:
 
+![sudo -l](https://github.com/user-attachments/assets/207aba02-ab7b-4e86-a894-14c07c6a9311)
 
+After using the last scp cmd in the .bash_history we have flag5 on our system.
 
+![flag5](https://github.com/user-attachments/assets/bd507873-f821-4afd-bff7-5894201feb97)
