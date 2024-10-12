@@ -73,6 +73,6 @@ The result returns the data base. We can then use that to do further enumeration
 
 This uncovers the info needed for the questions about the columns and info to make the next query to get Dennis's password.
 
-
+![sqlpassword](https://github.com/user-attachments/assets/e3a63c89-2262-475b-94d8-537510ca0da3)
 
 
